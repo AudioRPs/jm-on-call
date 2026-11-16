@@ -1,4 +1,4 @@
-// The Paradigm Reading, v2. The questions are the ones Joel asks on his calls, workshops and masterclasses, in his order.
+// On Call. The questions are the ones Joel asks on his calls, workshops and masterclasses, in his order.
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const mmss = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
@@ -217,7 +217,7 @@ function renderResult() {
     <div class="split" style="margin-top:18px">${clip('selfimage')}<div class="stack">${say('selfscript')}${say('thatsgood')}</div></div></div>`;
 
   $('#result').innerHTML = `
-    <div class="rhead"><div class="eyebrow"><i></i>Your reading</div><h1>Here's what Joel would say to you.</h1>
+    <div class="rhead"><div class="eyebrow"><i></i>On Call</div><h1>Here's what Joel would say to you.</h1>
       <div class="facts"><span>Now <b>${lvl}</b></span><span>Stuck <b>${LONG[A.long]}</b></span><span>Goal <b>${money(g)} a month</b></span></div></div>
     ${numberCard}${goalCard}${whyCard}${struggleCard}${changeCard}${iamCard}${beliefCard}${feelCard}${mindCard}${commitCard}${plan}
     <div class="card" style="text-align:center"><p class="intro" style="margin:0 0 6px">If you're a bit interested, the call isn't for you.</p>${say('callfilter')}</div>
